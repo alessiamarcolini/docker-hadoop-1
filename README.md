@@ -61,3 +61,19 @@ The available configurations are:
 * /etc/hadoop/mapred-site.xml  MAPRED_CONF
 
 If you need to extend some other configuration file, refer to base/entrypoint.sh bash script.
+
+
+## ~ Custom configuration ~
+
+In `/etc/hadoop/capacity-scheduler.xml`:
+
+* Property name: `yarn.scheduler.capacity.maximum-am-resource-percent`
+* New value: `1`
+
+In `/etc/hadoop/yarn-site.xml`:
+
+* Property name: `yarn.nodemanager.resource.memory-mb`
+* New value: `10240`
+
+
+__!! Note: remember to install python on every the containers!!__
