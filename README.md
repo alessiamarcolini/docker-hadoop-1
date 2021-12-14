@@ -76,4 +76,4 @@ In `/etc/hadoop/yarn-site.xml`:
 * New value: `10240`
 
 
-__!! Note: remember to install python on every containers!!__
+__!! Note: remember to install python on every container!!__
